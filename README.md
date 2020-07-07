@@ -1,2 +1,2 @@
 # SamplePage
-Sample page for project.
+Simple onepage for project.

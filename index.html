@@ -21,11 +21,9 @@
 
         <section class="right-section full-height">
 
-            <div class="navbar"
-                style="position:fixed; display:flex; align-items:center; height:100px; width:100%; top:0; padding:10px; background:white;">
-                <span class="logo" style="margin-left:10px;"><img src="img/logo.png" style="height:100px;"
-                        alt="sample logo" /></span>
-                <nav class="nav-list" style="display:flex; justify-content: space-between;">
+            <div class="navbar">
+                <span class="logo"><img src="img/logo.png" alt="sample logo" /></span>
+                <nav class="nav-list">
                     <div id="marker"></div>
                     <a class="nav-item" href="#main">Main</a>
                     <a class="nav-item" href="#about">About</a>
@@ -82,15 +80,15 @@
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, corporis!</p> <br>
                         <hr>
                         <form action="#" class="form" method="post">
-                            <label for="form_label">Imie:</label><Br>
+                            <label class="form_label">Name:</label><Br>
                             <input type="text" class="form_input" id="name" name="name" placeholder="Your name"
                                 required><Br>
-                            <label for="form_label">E-mail:</label><Br>
+                            <label class="form_label">E-mail:</label><Br>
                             <input type="text" class="form_input" id="email" name="e-mail" placeholder="Your email"
                                 required><br>
-                            <label for="form_label">Your message:</label><br><Br>
-                            <textarea name="comment" id="message" rows="5" cols="40" required></textarea><br>
-                            <input type="submit" class="form_submit">
+                            <label class="form_label">Your message:</label><br><Br>
+                            <textarea name="comment" id="message" required></textarea><br>
+                            <input type="submit" class="form_submit" value="Submit">
                         </form>
 
 
@@ -98,11 +96,11 @@
                     <hr>
                 </div>
             </div>
-            <footer style="position:fixed; bottom:0;width:inherit">
-                <div style=" background-color:white; padding:10px 30px;">
+            <footer>
+                <div class="footer-content">
                     <h4><b>Where you can find us?:</b></h4>
                     <hr>
-                    <p class="footer_info">
+                    <p>
                         Address: <b>Apendon Street 87, 200-200 New York</b> <br>
                         Telephone: <b><a href="tel:#">+1111111111</a></b><br>
                         Email: <b><a href="mailto:#">office@pcrepairs.acme.com</a></b>
