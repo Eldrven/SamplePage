@@ -17,7 +17,6 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
   }
 
 
-ini_set("sendmail_from", $email_from);
 if(!$error){
 
     $sent = mail($email_to, $email_subject, $message, $headers, "-f" .$email_from);
