@@ -8,8 +8,6 @@
 
 }
 
-/* Screens Resolution : 992px
--------------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
 	
 	nav a{
@@ -89,9 +87,6 @@
 }
 
 
-
-/* Screens Resolution : 767px
--------------------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
     body{ font-size: 12px; }
 
@@ -117,25 +112,9 @@
     p{ font-size:.7rem}
 }
 
-/* Screens Resolution : 479px
--------------------------------------------------------------------------- */
 @media only screen and (max-width: 479px) {
 
 	body{ font-size: 10px; }
 	
 
-}
-
-/* Screens Resolution : 359px
--------------------------------------------------------------------------- */
-@media only screen and (max-width: 359px) {
-	
-	
-}
-
-/* Screens Resolution : 290px
--------------------------------------------------------------------------- */
-@media only screen and (max-width: 290px) {
-	
-	
 }
