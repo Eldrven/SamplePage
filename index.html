@@ -1,15 +1,119 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
+    <title>Sample site</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Page</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content='Simple sample page for project made by Kamil Szewc.'>
+    <meta name="keywords" content="project, sample site">
+    <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <h1>Hello, this is sample page</h1>
+
+    <div class="main">
+
+        <section class="left-section" style="background-image: url(img/bg.jpg); position:fixed;">
+        </section>
+
+        <section class="right-section full-height">
+
+            <div class="navbar"
+                style="position:fixed; display:flex; align-items:center; height:100px; width:100%; top:0; padding:10px; background:white;">
+                <span class="logo" style="margin-left:10px;"><img src="img/logo.png" style="height:100px;"
+                        alt="sample logo" /></span>
+                <nav class="nav-list" style="display:flex; justify-content: space-between;">
+
+                    <a href="#main">Main</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+
+
+            <div class="section" id="main">
+                <div class="section-body">
+                    <div class="section-content">
+                        <h1 class="title"><b>PCrepair - IT workshop</b></h1>
+                        <hr>
+                        <div class="offer">
+                            <h2>PC repair</h2>
+                            <h2>Windows/Linux installation</h2>
+                            <h2>System/driver configuration</h2>
+                        </div>
+                        <hr>
+
+                        <p class="main_description"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Maiores,
+                                molestias? Aperiam
+                                amet repellendus quae ab mollitia dicta minus officia inventore dolorum possimus in id,
+                                suscipit nemo, quos doloremque vitae nostrum?</span><span>Sequi nulla nemo porro rerum
+                                molestiae temporibus hic. Reiciendis, numquam ad! Ipsam nesciunt, earum rerum cumque,
+                                quo ea, laboriosam neque aperiam odit suscipit quidem perferendis iusto iure a! Odio,
+                                sint!</span></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="about">
+                <div class="section-body">
+                    <div class="section-content">
+                        <h3 class="title"><b>Few words about us</b></h3>
+                        <hr>
+
+                        <p class="about_description"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Maiores,
+                                molestias? Aperiam
+                                amet repellendus quae ab mollitia dicta minus officia inventore dolorum possimus in id,
+                                suscipit nemo, quos doloremque vitae nostrum?</span><span>Sequi nulla nemo porro rerum
+                                molestiae temporibus hic. Reiciendis, numquam ad! Ipsam nesciunt, earum rerum cumque,
+                                quo ea, laboriosam neque aperiam odit suscipit quidem perferendis iusto iure a! Odio,
+                                sint!</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="contact">
+                <div class="section-body">
+                    <div class="section-content">
+                        <h3 class="title"><b>Contact Us!</b></h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, corporis!</p> <br>
+                        <hr>
+                        <form action="#" class="form" method="post">
+                            <label for="form_label">Imie:</label><Br>
+                            <input type="text" class="form_input" id="name" name="name" placeholder="Your name"
+                                required><Br>
+                            <label for="form_label">E-mail:</label><Br>
+                            <input type="text" class="form_input" id="email" name="e-mail" placeholder="Your email"
+                                required><br>
+                            <label for="form_label">Your message:</label><br><Br>
+                            <textarea name="comment" id="message" rows="5" cols="40" required></textarea><br>
+                            <input type="submit" class="form_submit">
+                        </form>
+
+
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <footer style="position:fixed; bottom:0;width:inherit">
+                <div style=" background-color:white; padding:10px 30px;">
+                    <h4><b>Where you can find us?:</b></h4>
+                    <hr>
+                    <p class="footer_info">
+                        Address: <b>Apendon Street 87, 200-200 New York</b> <br>
+                        Telephone: <b><a href="tel:#">+1111111111</a></b><br>
+                        Email: <b><a href="mailto:#">office@pcrepairs.acme.com</a></b>
+                    </p>
+
+                </div>
+            </footer>
+        </section>
+
+    </div>
+
 </body>
 
 </html>
