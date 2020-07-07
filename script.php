@@ -8,7 +8,6 @@ $message = $_POST["message"];
 $email_subject = "Form submission from website";
 $headers = "From: " . $email_from . "\n";
 $headers .= "Reply-To: " . $email . "\n";
-
 $message = "Name: ". $name . "\r\nMessage: " . $message;
 
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -20,9 +19,10 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 if(!$error){
 
     $sent = mail($email_to, $email_subject, $message, $headers, "-f" .$email_from);
+
     if ($sent)
 {
-header("Location: /");
+header("Location: index.html");
 } else {
 echo 'Oops! Something went wrong. Please try again later. <br> <a href="/">Back to main page</a>';
 }

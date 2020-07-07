@@ -82,8 +82,9 @@
                             <input type="text" class="form_input" id="name" name="name" placeholder="Your name"
                                 required><Br>
                             <label class="form_label">E-mail:</label><Br>
-                            <input type="text" class="form_input" id="email" name="email" type="email"
-                                placeholder="Your email" required><br>
+                            <input type="text" class="form_input" id="email" name="email"
+                                pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*"
+                                type="email" placeholder="Your email" required><br>
                             <label class="form_label">Your message:</label><br><Br>
                             <textarea name="message" id="message" required></textarea><br>
                             <input type="submit" class="form_submit" value="Submit">
