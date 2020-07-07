@@ -16,7 +16,9 @@ html {
 	width: 100%;
 	margin: 0px;
 	padding: 0px;
-	touch-action: manipulation;
+    touch-action: manipulation;
+
+	scroll-behavior: smooth;
 }
 
 body {
@@ -64,10 +66,6 @@ h3 {
 
 h4 {
 	font-size: 1.5em;
-}
-
-.offer {
-	width: 80%;
 }
 
 a {
@@ -156,7 +154,10 @@ button {
 .section-content .title {
 	margin-bottom: 15px;
 }
+footer{
 
+    box-shadow: 0 -4px 10px -2px lightgrey;
+}
 .footer-info {
 	color: #000;
 }
@@ -168,9 +169,13 @@ button {
 	padding-top:20px;
 	font-size: 1.3em;
 }
+.navbar {
+
+    box-shadow: 0 4px 10px -2px lightgrey;
+}
 nav {
 	position: relative;
-	display: flex
+    display: flex;
 }
 
 nav a {
@@ -184,4 +189,25 @@ nav a {
 
 .offer>h2{
 	padding:10px 0
+}
+
+nav #marker {
+	position: absolute;
+	left: 0;
+	height: 4px;
+	width: 0;
+	background: #7575ed;
+	bottom: -8px;
+	transition: 0.5s;
+	border-radius: 4px;
+}
+.nav-item{
+    color:#000;
+    font-weight: inherit;
+    
+    transition-duration: 0.5s;
+}
+.active{
+    color:#6161ff;
+    transform:scale(1.1)
 }
